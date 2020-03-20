@@ -1,0 +1,18 @@
+项目运行：
+在dfx**website下的website下启动git bash--npm run dev
+配置：dfx**website下的config---index.js的项目名下的target地址修改为http://localhost.huawei.com:post/xxx
+项目下service-configure.properties 
+#config_center_url={{CONFIG_CENTER_URL}}
+config_center_url=http://10.93.107.236:8500 A
+config_center_url=http://10.93.107.236:8510 B
+启动时需要有node_modules文件
+
+找vue：
+搜vue名称，在website/vuesrc/router找到 const ____ =resolve(vue路径)
+搜到的____再在website/vuesrc/router（当前文档）搜到path/name=____
+看上级path+/___ 即为当前页面
+
+
+tomcat7:run
+先选skip tests
+再选offline
